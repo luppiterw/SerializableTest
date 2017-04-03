@@ -1,3 +1,7 @@
+package models;
+
+import models.enums.Gender;
+
 import java.io.Serializable;
 
 /**

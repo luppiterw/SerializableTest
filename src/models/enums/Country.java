@@ -1,6 +1,8 @@
+package models.enums;
+
 /**
  * Created by hughie on 2017/4/3.
- * Country definitions
+ * model.Country definitions
  */
 public enum Country {
     CHINA,

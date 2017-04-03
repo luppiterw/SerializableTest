@@ -1,6 +1,8 @@
+package models.enums;
+
 /**
  * Created by hughie on 2017/4/3.
- * Gender(sexuality) definition, just in physiology
+ * model.Gender(sexuality) definition, just in physiology
  */
 public enum Gender {
     UNDISTINGUISHED,
