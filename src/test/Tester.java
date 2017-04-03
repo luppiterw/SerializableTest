@@ -13,11 +13,21 @@ import java.util.List;
  * For output test
  */
 public final class Tester {
-    public static final String testFileName = "testSerialFile.txt";
+    private static final String TEST_FILE_NAME = "testSerialFile.ser";
 
-    public static void savePerson(Person person) {
-        SerialUtil.saveObject(person, testFileName);
+    /**
+     * {@link java.io.Serializable}
+     * */
+    public static final class SpaceSerial {
+        public static void savePerson(Person person) {
+            SerialUtil.saveObject(person, TEST_FILE_NAME);
+        }
+
+        public static Object loadPerson() {
+            return SerialUtil.loadObject(TEST_FILE_NAME);
+        }
     }
+
 
     /**
      * {@link utils.ContainerUtil.SpaceHashTable}

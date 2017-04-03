@@ -1,49 +1,21 @@
 import models.Person;
+import models.enums.Gender;
 import test.Tester;
 
 public class Main {
 
     public static void main(String[] args) {
-        Tester.SpaceHashTable.printTimes(1_000_0000);
-//        int pairCounter = 0;
-//        for(Pair pair : propertyPairList) {
-//            System.out.println((++pairCounter) + " " + pair.getKey().toString() + " = " + pair.getValue().toString());
-//        }
 
-//        Set<Map.Entry<Object, Object>> propertySet = System.getProperties().entrySet();
-//        int counter = 0;
-//        for(Map.Entry<Object, Object> o : propertySet) {
-//            System.out.println((++counter) + " " + o.getKey().toString() + " = " + o.getValue().toString());
-//        }
-//        System.out.println("使用Set-Entry方式遍历" + (System.currentTimeMillis() - setTypeStartTime));
-
-//        propertySet.i
-        System.out.println("Encoding=" + System.getProperty("file.encoding"));
-        System.out.println("Hello World!");
-
-//        try {
-//            int readResult = System.in.read();
-//            System.out.println("System.in.read() = " + readResult);
-//            Scanner scanner = new Scanner(System.in);
-//            while(scanner.hasNext()) {
-//                System.out.println("scanner.next() = " + scanner.next());
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
-
-//        try {
-//            int readResult;
-//            while((readResult = System.in.read()) != 0) {
-//                System.out.println("System.in.read() = " + readResult);
-//            }
-//        } catch (IOException e) {
-//            e.printStackTrace();
-//        }
+        System.out.println("Hello World! Current Encoding = " + System.getProperty("file.encoding"));
 
 
-        Person person = new Person();
-        Tester.savePerson(person);
+        Person writePerson = new Person("wg", Gender.FEMALE, 20, true);
+        Tester.SpaceSerial.savePerson(writePerson);
+
+        Person readPerson = (Person)Tester.SpaceSerial.loadPerson();
+        System.out.println("LoadPerson = " + (readPerson == null ? null : readPerson.toString()));
+
+
     }
 
 
