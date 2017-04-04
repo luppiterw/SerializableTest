@@ -2,6 +2,8 @@ package test;
 
 import javafx.util.Pair;
 import models.Person;
+import models.PersonGroup;
+import models.SingletonTest;
 import utils.ContainerUtil;
 import utils.SerialUtil;
 
@@ -13,19 +15,34 @@ import java.util.List;
  * For output test
  */
 public final class Tester {
-    private static final String TEST_FILE_NAME = "testSerialFile.ser";
-
+    private static final String FILE_PERSON = "person.ser";
+    private static final String FILE_PERSONGROUP = "person_group.ser";
+    private static final String FILE_SINGLETONTEST = "singleton_test.ser";
     /**
      * {@link java.io.Serializable}
      * */
     public static final class SpaceSerial {
         public static void savePerson(Person person) {
-            SerialUtil.saveObject(person, TEST_FILE_NAME);
+            SerialUtil.saveObject(person, FILE_PERSON);
+        }
+        public static Person loadPerson() {
+            return (Person) SerialUtil.loadObject(FILE_PERSON);
         }
 
-        public static Object loadPerson() {
-            return SerialUtil.loadObject(TEST_FILE_NAME);
+        public static void savePersonGroup(PersonGroup personGroup) {
+            SerialUtil.saveObject(personGroup, FILE_PERSONGROUP);
         }
+        public static PersonGroup loadPersonGroup() {
+            return (PersonGroup) SerialUtil.loadObject(FILE_PERSONGROUP);
+        }
+
+        public static void saveSingletonTest(SingletonTest singletonTest) {
+            SerialUtil.saveObject(singletonTest, FILE_SINGLETONTEST);
+        }
+        public static SingletonTest loadSingletonTest() {
+            return (SingletonTest) SerialUtil.loadObject(FILE_SINGLETONTEST);
+        }
+
     }
 
 

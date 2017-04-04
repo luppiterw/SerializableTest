@@ -26,6 +26,8 @@ public class Person implements Serializable{
         return "name=[" + name + "] gender=[" + gender + "] age=[" + age + "] alive=[" + alive + "]";
     }
 
+
+
     private String name;
     private Gender gender;
     private int age;
