@@ -34,6 +34,7 @@ public class SingletonTest implements Serializable{
 //        } catch (ClassNotFoundException e) {
 //            e.printStackTrace();
 //        }
+//        abc = 232;
         System.out.println("[SingletonTest.readObject(ObjectInputStream)] " + this.toString());// + " ObjectInputStream=" + s.toString());
     }
 //
