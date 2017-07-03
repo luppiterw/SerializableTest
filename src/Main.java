@@ -15,8 +15,8 @@ public class Main {
     public static void main(String[] args) {
 
         System.out.println("Hello World! Current Encoding = " + System.getProperty("file.encoding"));
-        Method a;
-        a.invoke()
+//        Method a;
+//        a.invoke()
 
 //        SingletonTest writeSingletonTest = SingletonTest.INSTANCE;
 //        Tester.SpaceSerial.saveSingletonTest(writeSingletonTest);
