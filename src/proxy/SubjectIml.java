@@ -2,8 +2,8 @@ package proxy;
 
 /**
  * Created by hughie on 17-7-3.
- * Test proxy
+ * Abstract proxy interface
  */
-public interface Subject {
+public interface SubjectIml {
     void print();
 }
