@@ -1,7 +1,7 @@
-package main.java.test;
+package test;
 
 
-import main.java.models.SingletonTest;
+import models.SingletonTest;
 
 /**
  * Created by hughie on 17-7-3.

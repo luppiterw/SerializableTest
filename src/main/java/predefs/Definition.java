@@ -1,4 +1,4 @@
-package main.java.predefs;
+package predefs;
 
 /**
  * Created by hughie on 2017/4/3.

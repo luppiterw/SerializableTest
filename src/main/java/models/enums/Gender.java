@@ -1,4 +1,4 @@
-package main.java.models.enums;
+package models.enums;
 
 /**
  * Created by hughie on 2017/4/3.

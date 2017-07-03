@@ -1,4 +1,6 @@
-package main.java.models;
+package models;
+
+import models.IGroup;
 
 import java.io.Serializable;
 

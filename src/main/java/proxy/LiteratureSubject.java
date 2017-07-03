@@ -1,4 +1,4 @@
-package main.java.proxy;
+package proxy;
 
 /**
  * Created by hughie on 17-7-3.

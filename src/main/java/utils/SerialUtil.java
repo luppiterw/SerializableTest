@@ -1,4 +1,4 @@
-package main.java.utils;
+package utils;
 
 import com.sun.media.jfxmedia.logging.Logger;
 

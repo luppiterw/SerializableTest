@@ -1,11 +1,11 @@
-package main.java.test;
+package test;
 
 import javafx.util.Pair;
-import main.java.models.Person;
-import main.java.models.PersonGroup;
-import main.java.models.SingletonTest;
-import main.java.utils.ContainerUtil;
-import main.java.utils.SerialUtil;
+import models.Person;
+import models.PersonGroup;
+import models.SingletonTest;
+import utils.ContainerUtil;
+import utils.SerialUtil;
 
 
 import java.util.Hashtable;
