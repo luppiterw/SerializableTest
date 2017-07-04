@@ -2,6 +2,9 @@
 .idea/
 SerializableTest.iml
 out/
+target/
 
 *.ser
+
+
 
