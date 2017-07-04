@@ -1,3 +1,6 @@
+import dynamic_proxy.SDynamicProxy;
+import test.TestDynamicProxy;
+
 import java.io.IOException;
 import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
@@ -10,6 +13,8 @@ public class Main {
 
         System.out.println("Hello World! Current Encoding = " + System.getProperty("file.encoding"));
 
+        System.out.println("SDynamicProxy.class.getName()=" + SDynamicProxy.class.getName());
+        TestDynamicProxy.test();
     }
 
 }

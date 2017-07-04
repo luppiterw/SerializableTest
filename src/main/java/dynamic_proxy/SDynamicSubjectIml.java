@@ -1,9 +1,9 @@
-package proxy;
+package dynamic_proxy;
 
 /**
  * Created by hughie on 17-7-3.
  * Abstract proxy interface
  */
-public interface SubjectIml {
+public interface SDynamicSubjectIml {
     void print();
 }

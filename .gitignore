@@ -6,5 +6,7 @@ target/
 
 *.ser
 
+$Proxy.java
+$Proxy.class
 
 
