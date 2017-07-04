@@ -8,6 +8,8 @@ import dynamic_proxy.SDynamicSubjectIml;
 /**
  * Created by hughie on 17-7-4.
  * Test dynamic proxy
+ *
+ * Refer to http://blog.csdn.net/minidrupal/article/details/24888271
  */
 public class TestDynamicProxy {
     public static void test() {

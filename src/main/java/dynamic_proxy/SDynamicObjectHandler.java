@@ -25,7 +25,7 @@ public class SDynamicObjectHandler implements SDynamicInvocationHandlerIml {
         System.out.println("Proxy: SDynamicObjectHandler.invoke start");
 //把被代理类对象传进去，通过反射技术调用被代理类的方法，
         method.invoke(delegate);
-        System.out.println("Proxy: SDynamicObjectHandler.invoke ");
+        System.out.println("Proxy: SDynamicObjectHandler.invoke end");
         return result;
     }
 
